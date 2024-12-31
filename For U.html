@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy New Year to เบนซ์</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Kanit', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+                color: #4a4a4a;
+                text-align: center;
+                padding: 50px 20px 20px;
+                overflow-x: hidden;
+                position: relative;
+            }
+
+            /* Effect fireworks */
+            #fireworks {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 9999; /* ให้พลุอยู่บนสุด */
+                pointer-events: none; /* ให้พลุไม่ขัดการใช้งานอื่นๆ */
+            }
+
+            .main-title {
+                font-size: 2rem;
+                color: white;
+                margin-bottom: 20px;
+                z-index: 2; /* ข้อความอยู่ข้างบน */
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* เพิ่มเงา */
+            }
+	    .media-container {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin: 30px 0 ;
+		margin-bottom: 0 px 0;
+            }
+
+            .media-container video,
+            .media-container img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .background-image {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/38030.png');
+                background-position: center;
+                background-size: cover;
+                z-index: -1; /* ส่งภาพพื้นหลังไปข้างหลังสุด */
+            }
+
+            .card {
+                background: #ffffff;
+                border-radius: 20px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 20px 30px;
+                max-width: 400px;
+                line-height: 1.8;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                position: relative;
+                z-index: 1; /* ตั้งให้ card อยู่ข้างบนของพลุ */
+            }
+
+            h1 {
+                font-size: 1.3rem;
+                margin: 10px 0;
+                color: #ff69b4;
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin: 15px 0;
+            }
+
+            .signature {
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 1.1rem;
+                color: #ff7f50;
+                z-index: 2; /* ข้อความอยู่ข้างบน */
+            }
+
+            .image-gallery {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .image-gallery img {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                object-fit: cover;
+            }
+
+            .marquee {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.8);
+                color: #ff69b4;
+                font-size: 1.2rem;
+                text-align: center;
+                padding: 10px 0;
+                animation: marquee 10s linear infinite;
+            }
+
+            @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+            }
+
+            #music-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #ff69b4;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-family: 'Kanit', sans-serif;
+                cursor: pointer;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+    </head>
+    <body>
+        <h2 class="main-title">Welcome to Benz’s countdown gift card 💕</h2>
+
+	<!-- เพิ่มวิดีโอและรูปภาพ -->
+	<div class="media-container">
+  	  <video autoplay loop muted>
+	    <source src="https://github.com/Toxnamm/HNY-2025/raw/main/757346942.847828.mp4" type="video/mp4">
+	    Your browser does not support the video tag.
+	  </video>
+
+	    <img src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/S__36306970.jpg" alt="รูปภาพ 1">
+ 	   <img src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/S__36306959.jpg" alt="รูปภาพ 2">
+	</div>
+
+
+        <div class="background-image"></div>
+        <div class="card">
+            <h1>To… เบนซ์แฟนที่น่ารักที่สุดของนิว 🦛💕</h1>
+            <p>
+                อีกไม่นานก็จะปีใหม่แล้วนะอ้วง! ที่ผ่านมาเค้ารู้สึกโชคดีมากที่มีอ้วนอยู่ในชีวิตเค้า อาจจะทำให้อ้วนเศร้าบ้างในปีนี้ เค้าขอโทษนะ เค้ารักอ้วนมากๆ ถึงจะงี่เง่าก็ตาม อะไรที่ไม่ดีทิ้งไว้ที่ปีที่แล้วนะ
+            </p>
+            <p>
+                ปีใหม่นี้ ขอให้อ้วนมีความสุขมากๆ ยิ้มเยอะๆ เค้าจะอยู่ข้างๆอ้วนเสมอ ไม่ว่าจะปีไหนหรือเวลาใด
+            </p>
+            <p class="signature">
+                โตไปด้วยกันนะงับอ้วน รักเบนซ์เสมอนะ 🤍
+            </p>
+        </div>
+        <div class="image-gallery">
+            <img src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/834aa2da-c043-42f3-bb8f-a1cc599325ad.png" alt="รูปที่ 1">
+            <img src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/PHOTO2.png" alt="รูปที่ 2">
+            <img src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/PHOTO3.png" alt="รูปที่ 3">
+        </div>
+
+        <audio id="background-music" loop autoplay>
+            <source src="https://raw.githubusercontent.com/Toxnamm/HNY-2025/main/voice1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <button id="music-button">🎵 Play Music</button>
+        <canvas id="fireworks"></canvas>
+        <script>
+            const music = document.getElementById("background-music");
+            const musicButton = document.getElementById("music-button");
+            let isPlaying = false;
+
+            musicButton.addEventListener("click", () => {
+                if (isPlaying) {
+                    music.pause();
+                    musicButton.textContent = "🎵 Play Music";
+                } else {
+                    music.play();
+                    musicButton.textContent = "⏸️ Pause Music";
+                }
+                isPlaying = !isPlaying;
+            });
+
+            const canvas = document.getElementById("fireworks");
+            const ctx = canvas.getContext("2d");
+            const particles = [];
+            const colors = ["#FF5733", "#FFC300", "#DAF7A6", "#C70039", "#900C3F"];
+
+            // Resize the canvas to full screen
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            window.addEventListener("resize", resizeCanvas);
+            resizeCanvas();
+
+            function createParticle(x, y) {
+                particles.push({
+                    x, y,
+                    size: Math.random() * 5 + 2,
+                    speedX: Math.random() * 4 - 2,  // Random horizontal speed
+                    speedY: Math.random() * 4 - 2,  // Random vertical speed
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    life: Math.random() * 60 + 30,
+                });
+            }
+
+            function triggerFireworks() {
+                // Create fireworks particles at random positions
+                createParticle(Math.random() * canvas.width, Math.random() * canvas.height);
+            }
+
+            // Trigger fireworks every 1.5 seconds
+            setInterval(triggerFireworks, 100);
+
+            // Animation loop to draw particles
+            function animateParticles() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear canvas
+                for (let i = particles.length - 1; i >= 0; i--) {
+                    const p = particles[i];
+                    p.x += p.speedX;  // Update X position
+                    p.y += p.speedY;  // Update Y position
+                    p.life--;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fillStyle = p.color;
+                    ctx.fill();
+                    if (p.life <= 0) particles.splice(i, 1);  // Remove dead particles
+                }
+                requestAnimationFrame(animateParticles);  // Loop the animation
+            }
+            animateParticles();  // Start animation loop
+        </script>
+    </body>
+</html>
